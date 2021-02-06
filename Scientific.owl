@@ -1,0 +1,311 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Has">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Journal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#ConferenceDB"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#JounralDB"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#StoredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#StoredIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Database"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#publishedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#publishedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Edition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Journal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#reviews -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#reviews">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Reviewer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#writes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#writes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Author"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#ISBN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#ISBN">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Paper"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#URLDatabase -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#URLDatabase">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#ConferenceDB"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#JounralDB"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#affiliation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#affiliation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Scientific"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#dateEdition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#dateEdition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Edition"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#datePaper -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#datePaper">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Paper"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#nameConference -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#nameConference">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Conference"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#nameJournal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#nameJournal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Journal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#nameScientific -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#nameScientific">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Scientific"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#number">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Edition"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#pages -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#pages">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Paper"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#placeEdition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#placeEdition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Edition"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Paper"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Author">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Scientific"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Conference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Conference"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#ConferenceDB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#ConferenceDB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#ConventionalJournal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#ConventionalJournal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Journal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Database -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Database"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#DemoPaper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#DemoPaper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Edition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Edition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Conference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#FullPaper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#FullPaper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#JounralDB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#JounralDB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Database"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Journal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Journal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#OpenAccesJournal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#OpenAccesJournal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Journal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Paper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Paper"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Reviewer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Reviewer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Scientific"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Scientific -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Scientific"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#ShortPaper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#ShortPaper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#SurveyPaper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#SurveyPaper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joanpratsicart/ontologies/2019/3/untitled-ontology-3#Paper"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
